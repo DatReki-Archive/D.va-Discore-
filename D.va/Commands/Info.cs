@@ -21,7 +21,7 @@ namespace D.va.Commands
             try
             {
                 await Channel.TriggerTypingIndicator();
-                await Channel.CreateMessage($"Hello I'm D.va and I'm created by {BotOwner.BotOwnerName + BotOwner.BotOwnerDiscrim}\nOwner ID: {BotOwner.BotOwnerID}");
+                await Channel.CreateMessage($"Hello I'm D.va and I'm created by {BotOwner.BotOwnerName + BotOwner.BotOwnerDiscrim}\nOwner ID: {BotOwner.BotOwnerID}\nServerID: {BotOwner.BotOwnerServerID}");
             }
             catch (Exception ex)
             {
